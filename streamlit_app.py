@@ -39,7 +39,7 @@ import snowflake.connector
 
 my_cnx = snowflake.connector.connect(**s.secrets["snowflake"])
 my_cur = my_cnx.cursor()
-my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
+my_cur.execute("select * from fruit_load_list")
 my_data_row = my_cur.fetchone()
-s.text("Hello from Snowflake:")
+s.text("The fruit load list contains:")
 s.text(my_data_row)
