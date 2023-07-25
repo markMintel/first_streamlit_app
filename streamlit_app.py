@@ -25,4 +25,5 @@ s.dataframe(fruits_to_show)
 # Display fruityvice api response
 
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+s.header("Fruityvice Fruit Advice!")
 s.text(fruityvice_response.json())
