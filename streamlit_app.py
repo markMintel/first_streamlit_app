@@ -15,6 +15,6 @@ my_fruit_list = pd.read_csv('https://uni-lab-files.s3.us-west-2.amazonaws.com/da
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
 # Create a pick list to pick which friuts they want
-s.multiselect('Pick some fruits:', list(my_fruit_list.index),['Avacado','Stawberries'])
+s.multiselect('Pick some fruits:', list(my_fruit_list.index),['Avocado','Strawberries'])
 
 s.dataframe(my_fruit_list)
