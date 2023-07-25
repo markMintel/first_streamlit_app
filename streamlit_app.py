@@ -7,3 +7,5 @@ s.text('🥣 Omega 3 & Blueberry Oatmeal')
 s.text('🥗 Kale, SPinach & Rocket Smoothie')
 s.text('🐔 Hard-Boiled Free-Range Egg')
 s.text('🥑🍞 Avacado Toast')
+
+s.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
