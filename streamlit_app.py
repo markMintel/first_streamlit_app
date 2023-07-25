@@ -24,8 +24,11 @@ s.dataframe(fruits_to_show)
 
 # Display fruityvice api response
 
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 s.header("Fruityvice Fruit Advice!")
+fruit_choice = s.text_input('What fruit would you like information about?', 'Kiwi')
+s.write('The user entered', fruit_choice)
+
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
 
 # Normalize the json output with pandas
 fruityvice_normalized = pd.json_normalize(fruityvice_response.json())
